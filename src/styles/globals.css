@@ -11,3 +11,7 @@ html {
 .link-hover a {
   @apply hover:text-teal-600;
 }
+
+.tag {
+  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
+}
