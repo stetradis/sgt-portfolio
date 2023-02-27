@@ -17,7 +17,7 @@ const Navigation = (props: any) => {
                 <li><a href='#contact'>Contact</a></li>
             </ul>
             <ul className='flex items-center'>
-                <li className='rounded-full shadow-md border border-zinc-200 bg-zinc-100 dark:bg-zinc-800 px-3 py-2'>
+                <li className='rounded-full shadow-md border border-zinc-200 bg-zinc-100 dark:bg-zinc-800 dark:text-gray-300 px-3 py-2'>
                     {mode ? 
                     <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => {toggleDarkMode()}}/> : 
                     <BsSun className='cursor-pointer text-xl' onClick={() => {toggleDarkMode()}}/>

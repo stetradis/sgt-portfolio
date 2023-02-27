@@ -10,7 +10,7 @@ const PortfolioCard = () => {
           </div>
 
           <div className='flex flex-wrap gap-4 pb-6'>
-            <div className="max-w-xs mx-auto rounded overflow-hidden shadow-lg relative dark:shadow-none dark:border dark:border-zinc-700">
+            <div className="darkcard max-w-xs mx-auto rounded overflow-hidden shadow-lg relative">
               <Image className="w-full" src="/bweditorial.png" alt="Blockworks Editorial" width={300} height={0} priority/>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">Blockworks</div>
@@ -22,13 +22,13 @@ const PortfolioCard = () => {
                 <Tag tagNames={['javascript','nodejs', 'php', 'heroku', 'wordpress', 'css', 'mysql', 'seo']}></Tag>
               </div>
               <div className="px-6 pb-2 mt-20">
-                <button className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
+                <a href="https://blockworks.co/" target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
                  Visit Website
-                </button>
+                </a>
               </div>
             </div>
 
-            <div className="max-w-xs mx-auto rounded overflow-hidden shadow-lg relative dark:shadow-none dark:border dark:border-zinc-700">
+            <div className="darkcard max-w-xs mx-auto rounded overflow-hidden shadow-lg relative">
               <Image className="w-full" src="/bwresearch.png" alt="Blockworks Research" width={300} height={0}/>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">Blockworks Research</div>
@@ -40,13 +40,13 @@ const PortfolioCard = () => {
                 <Tag tagNames={['javascript','typescript', 'php', 'mysql', 'nextjs', 'react', 'tailwind', 'aws', 'docker', 'vercel', 'graphql', 'mixpanel']}></Tag>
               </div>
               <div className="px-6 pb-2 mt-20">
-                <button className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
+                <a href="https://www.blockworksresearch.com/" target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
                  Visit Website
-                </button>
+                </a>
               </div>
             </div>
 
-            <div className="max-w-xs mx-auto rounded overflow-hidden shadow-lg relative dark:shadow-none dark:border dark:border-zinc-700">
+            <div className="darkcard max-w-xs mx-auto rounded overflow-hidden shadow-lg relative">
               <Image className="w-full" src="/saspeakup.png" alt="SA Speak Up" width={300} height={30}/>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">San Antonio Speak Up</div>
@@ -58,27 +58,27 @@ const PortfolioCard = () => {
                 <Tag tagNames={['javascript', 'jquery', 'ajax', 'c#', '.net', 'mvc', 'azure', 'sqlserver', 'css', 'bootstrap']}></Tag>
               </div>
               <div className="px-6 pb-2 mt-20">
-                <button className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
+                <a href="https://www.saspeakup.com/" target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
                  Visit Website
-                </button>
+                </a>
               </div>
             </div>
 
-            <div className="max-w-xs mx-auto rounded overflow-hidden shadow-lg relative dark:shadow-none dark:border dark:border-zinc-700">
+            <div className="darkcard max-w-xs mx-auto rounded overflow-hidden shadow-lg relative">
               <Image className="w-full" src="/ninetyone.png" alt="Ninety One" width={300} height={0} priority/>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">Ninety One</div>
                 <p className="text-gray-700 dark:text-gray-300 text-base">
-                  Rebranded 'Investec Asset Management' to Ninety One. Developed the end user website as well as rewriting the investment management backend system. 
+                  Developed the end user website as well as rewriting the investment management backend system. 
                 </p>
               </div>
               <div className="px-6 pt-4 pb-2">
                 <Tag tagNames={['javascript', 'typescript', 'angular', 'c#', '.net', 'azure', 'sqlserver', 'cosmosdb', 'aws', 'docker']}></Tag>
               </div>
               <div className="px-6 pb-2 mt-20">
-                <button className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
+                <a href="https://ninetyone.com/en/south-africa" target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6">
                  Visit Website
-                </button>
+                </a>
               </div>
             </div>
           </div>

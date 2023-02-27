@@ -20,7 +20,7 @@ export default function Home() {
       <Head>
         <title>Stella Tetradis</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/st-logo.png" />
       </Head>
       <main className='dark:text-white dark:bg-zinc-900'>
         <Navigation mode={darkMode} setMode={setDarkMode} />

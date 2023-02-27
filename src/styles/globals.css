@@ -19,3 +19,7 @@ html {
 body .dark {
   @apply bg-zinc-900;
 }
+
+.dark .darkcard {
+  @apply bg-zinc-800/30 shadow-none border border-zinc-700;
+}
