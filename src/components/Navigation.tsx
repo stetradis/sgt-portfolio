@@ -1,6 +1,12 @@
-import {BsFillMoonStarsFill, BsDownload} from 'react-icons/bs';
+import { useEffect } from 'react';
+import {BsFillMoonStarsFill, BsSun, BsDownload} from 'react-icons/bs';
 const Navigation = (props: any) => {
     const { mode, setMode } = props;
+
+    const toggleDarkMode = () => {
+        setMode(!mode);
+        localStorage.setItem('dark', JSON.stringify(!mode));
+    }
 
     return (
         <>
@@ -11,7 +17,12 @@ const Navigation = (props: any) => {
                 <li><a href='#contact'>Contact</a></li>
             </ul>
             <ul className='flex items-center'>
-              <li><BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => {setMode(!mode)}}/></li>
+                <li className='rounded-full shadow-md border border-zinc-200 bg-zinc-100 dark:bg-zinc-800 px-3 py-2'>
+                    {mode ? 
+                    <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => {toggleDarkMode()}}/> : 
+                    <BsSun className='cursor-pointer text-xl' onClick={() => {toggleDarkMode()}}/>
+                    }
+                </li>
               <li><a href='#' className='flex bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded ml-8 gap-2'>Download Resum&eacute; <BsDownload className='text-xl'/></a></li>
             </ul>
         </nav>
