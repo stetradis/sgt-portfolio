@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Head from 'next/head'
+import Head from 'next/head';
 
 import Navigation from '@/components/Navigation';
 import SocialLink from '@/components/SocialLink';
@@ -11,7 +11,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   
   useEffect(() => {
-    const storedDarkMode = JSON.parse(localStorage.getItem('dark') || '');
+    const storedDarkMode = JSON.parse(localStorage.getItem('dark') || 'false');
     setDarkMode(storedDarkMode);
   }, [])
   

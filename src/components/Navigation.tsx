@@ -5,7 +5,12 @@ const Navigation = (props: any) => {
 
     const toggleDarkMode = () => {
         setMode(!mode);
-        localStorage.setItem('dark', JSON.stringify(!mode));
+        try {
+            localStorage.setItem('dark', JSON.stringify(!mode));
+        }
+        catch (error: any) {
+            console.log(error.message);
+        }
     }
 
     return (
@@ -18,8 +23,8 @@ const Navigation = (props: any) => {
             <ul className='flex items-center'>
                 <li className='rounded-full shadow-md border border-zinc-200 bg-zinc-100 dark:bg-zinc-800 dark:text-gray-300 px-3 py-2'>
                     {mode ? 
-                    <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => {toggleDarkMode()}}/> : 
-                    <BsSun className='cursor-pointer text-xl' onClick={() => {toggleDarkMode()}}/>
+                    <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={toggleDarkMode}/> : 
+                    <BsSun className='cursor-pointer text-xl' onClick={toggleDarkMode}/>
                     }
                 </li>
               <li><a href='/webresume.pdf' target="_blank" download="Stella Tetradis - Resume" className='flex bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded ml-8 gap-2'>Download Resum&eacute; <BsDownload className='text-xl'/></a></li>
