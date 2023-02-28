@@ -6,7 +6,7 @@ const PortfolioCard = () => {
         <section id='portfolio' className='mt-10'>
           <div className='p-10 text-center'>
               <h3 className='text-2xl py-2 font-semibold'>Portfolio</h3>
-              <p className='text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto'>Being a software engineer in financial technology often means that the projects I've worked on cannot be shared publicly due to NDAs and access requirements. Here you can find a handful of publicly available projects that I have developed.</p>
+              <p className='text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto'>Being a software engineer in financial technology often means that the projects I&apos;ve worked on cannot be shared publicly due to NDAs and access requirements. Here you can find a handful of publicly available projects that I have developed.</p>
           </div>
 
           <div className='flex flex-wrap gap-4 pb-6'>
@@ -51,7 +51,7 @@ const PortfolioCard = () => {
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">San Antonio Speak Up</div>
                 <p className="text-gray-700 dark:text-gray-300 text-base">
-                  Lead engineer on the city of San Antonio's engagement portal and representative backend system.
+                  Lead engineer on the city of San Antonio&apos;s engagement portal and representative backend system.
                 </p>
               </div>
               <div className="px-6 pt-4 pb-2">

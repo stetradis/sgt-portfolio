@@ -14,7 +14,6 @@ const Navigation = (props: any) => {
             <ul className='flex text-xl font-semibold gap-8 nav-links'>
                 <li><a href='#about'>About</a></li>
                 <li><a href='#portfolio'>Portfolio</a></li>
-                <li><a href='#contact'>Contact</a></li>
             </ul>
             <ul className='flex items-center'>
                 <li className='rounded-full shadow-md border border-zinc-200 bg-zinc-100 dark:bg-zinc-800 dark:text-gray-300 px-3 py-2'>
