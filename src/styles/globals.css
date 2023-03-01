@@ -8,7 +8,7 @@ html {
   @apply font-body;
 }
 
-.link-hover a {
+.link-hover a, button {
   @apply hover:text-teal-600;
 }
 

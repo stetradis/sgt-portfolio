@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Head from 'next/head';
 
-import Navigation from '@/components/Navigation';
 import SocialLink from '@/components/SocialLink';
 import PortfolioCard from '@/components/PortfolioCard';
 import { useState, useEffect } from 'react';
 import { classNames } from '@/utils/classNames';
+import Navigation from '@/components/Navigation';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/st-logo.png" />
       </Head>
       <main className='dark:text-white dark:bg-zinc-900'>
-        <Navigation mode={darkMode} setMode={setDarkMode} />
+        <Navigation mode={darkMode} setMode={setDarkMode}/>
           <section id='about'>          
             <div className='p-8 text-center'>
               <h2 className='text-4xl font-semibold py-4 text-teal-600 font-md'>Stella Tetradis</h2>
