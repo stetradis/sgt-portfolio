@@ -4,8 +4,9 @@ import {BsFillMoonStarsFill, BsSun, BsDownload} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const navigation = [
-  { name: 'About', href: '#about', current: true },
-  { name: 'Portfolio', href: '#portfolio', current: false },
+  { name: 'About', href: '#about' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Tech Stack', href: '#techstack' },
 ]
 
 const Navigation = (props: any) => {

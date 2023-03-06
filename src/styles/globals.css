@@ -23,3 +23,7 @@ body .dark {
 .dark .darkcard {
   @apply bg-zinc-800/30 shadow-none border border-zinc-700;
 }
+
+.stack, .icon {
+  @apply w-full hover:text-teal-600 hover:scale-105;
+}

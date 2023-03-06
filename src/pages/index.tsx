@@ -6,6 +6,7 @@ import PortfolioCard from '@/components/PortfolioCard';
 import { useState, useEffect } from 'react';
 import { classNames } from '@/utils/classNames';
 import Navigation from '@/components/Navigation';
+import TechStack from '@/components/TechStack';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,12 +30,13 @@ export default function Home() {
               <h2 className='text-4xl font-semibold py-4 text-teal-600 font-md'>Stella Tetradis</h2>
               <h3 className='text-2xl py-2'>Software Engineer</h3>
               <p className='text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto'>As a Full Stack Software Engineer with 6+ years of experience, I have a proven track record of developing innovative software solutions in the financial technology and digital asset space. My experience includes designing, developing, and maintaining complex software applications that meet the needs of clients and businesses.</p>
-              <Image src="/aistella.jpg" alt='Stella' width={220} height={0} className='my-4 mx-auto rounded-full overflow-hidden'/>
+              <Image src="/aistella.jpg" alt='Stella' width={210} height={0} className='my-4 mx-auto rounded-full overflow-hidden' priority />
             </div>
             <SocialLink/>
           </section>
 
           <PortfolioCard/>
+          <TechStack/>
       </main>
     </div>
   )
