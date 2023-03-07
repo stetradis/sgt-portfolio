@@ -24,6 +24,10 @@ body .dark {
   @apply bg-zinc-800/30 shadow-none border border-zinc-700;
 }
 
+.stack {
+  @apply block max-w-xs p-6 darkcard mx-auto rounded overflow-hidden border relative shadow-md;
+}
+
 .stack, .icon {
   @apply w-full hover:text-teal-600 hover:scale-105;
 }
