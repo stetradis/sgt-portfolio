@@ -69,7 +69,7 @@ const Navigation = (props: any) => {
                         <BsSun className='cursor-pointer text-xl' onClick={toggleDarkMode}/>
                         }
                     </li>
-                    <li><a href='/webresume.pdf' target="_blank" download="Stella Tetradis - Resume" className='flex bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded ml-6 gap-2'>Resum&eacute; <BsDownload className='text-xl'/></a></li>
+                    <li><a href='/stella-tetradis-resume.pdf' target="_blank" download="Stella Tetradis - Resume" className='flex bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded ml-6 gap-2'>Resum&eacute; <BsDownload className='text-xl'/></a></li>
                     </ul>
                 </div>
                 </div>
