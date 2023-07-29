@@ -9,7 +9,7 @@ const CurrentProject = () => {
           What am I working on now?
         </h3>
         <p className="text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
-          Apart from my side projects (building an NFT gallery and an AI powered
+          Apart from my side projects (building an NFT gallery and an AI-powered
           smart contract reader), I am currently contracted as a Software
           Engineer at BuildLegends, specializing in creating confidence-building
           tools for children.
