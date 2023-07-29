@@ -6,7 +6,6 @@ import { AiOutlineClose } from "react-icons/ai";
 const navigation = [
   { name: "About", href: "#about" },
   { name: "Portfolio", href: "#portfolio" },
-  { name: "Tech Stack", href: "#techstack" },
 ];
 
 const Navigation = (props: any) => {

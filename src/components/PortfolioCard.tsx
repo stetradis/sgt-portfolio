@@ -3,9 +3,9 @@ import Tag from "./Tag";
 
 const PortfolioCard = () => {
   return (
-    <section id="portfolio" className="mt-10">
+    <section className="mt-10">
       <div className="p-10 text-center">
-        <h3 className="text-2xl py-2 font-semibold">Portfolio</h3>
+        <h3 className="text-2xl py-2 font-semibold">Past Projects</h3>
         <p className="text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
           Being a software engineer in financial technology often means that the
           projects I&apos;ve worked on cannot be shared publicly due to NDAs and
