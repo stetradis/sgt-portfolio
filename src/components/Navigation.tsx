@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { BsFillMoonStarsFill, BsSun, BsDownload } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
+import Image from "next/image";
 
 const navigation = [
   { name: "About", href: "#about" },
@@ -24,7 +25,7 @@ const Navigation = (props: any) => {
     <Disclosure as="nav" className="">
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -42,10 +43,12 @@ const Navigation = (props: any) => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
+                  <Image
                     className="hidden h-10 w-auto sm:block"
                     src="/st-logo.png"
                     alt="ST logo"
+                    width={40}
+                    height={40}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -54,7 +57,7 @@ const Navigation = (props: any) => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="rounded-md px-3 py-2 text-xl font-semibold hover:text-teal-600"
+                        className="rounded-md px-3 py-2 text-xl font-semibold hover:text-purple-700"
                       >
                         {item.name}
                       </a>
@@ -89,14 +92,14 @@ const Navigation = (props: any) => {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium hover:text-teal-600"
+                  className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple-700"
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
             </div>
           </Disclosure.Panel>
-          <hr className="h-1 bg-teal-600" />
+          <hr className="h-1 bg-purple-700" />
         </>
       )}
     </Disclosure>

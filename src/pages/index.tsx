@@ -10,10 +10,10 @@ import TechStack from "@/components/TechStack";
 import CurrentProject from "@/components/CurrentProject";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const storedDarkMode = JSON.parse(localStorage.getItem("dark") || "false");
+    const storedDarkMode = JSON.parse(localStorage.getItem("dark") || "true");
     setDarkMode(storedDarkMode);
   }, []);
 
@@ -29,11 +29,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/st-logo.png" />
       </Head>
+      <Navigation mode={darkMode} setMode={setDarkMode} />
       <main className="dark:text-white dark:bg-zinc-900">
-        <Navigation mode={darkMode} setMode={setDarkMode} />
         <section id="about">
           <div className="p-8 text-center">
-            <h2 className="text-4xl font-semibold py-4 text-teal-600 font-md">
+            <h2 className="text-4xl font-semibold py-4 text-purple-700 font-md">
               Stella Tetradis
             </h2>
             <h3 className="text-2xl py-2">Software Engineer</h3>

@@ -22,7 +22,7 @@ const TechStack = () => {
           The tech stack that I use consists of a combination of programming
           languages, frameworks, libraries, and tools that enable me to build
           robust and scalable applications. This is an overview of the various
-          technologies that I have used throughout my career.{" "}
+          technologies that I have used throughout my career.
         </p>
       </div>
       <div className="flex flex-wrap gap-4">

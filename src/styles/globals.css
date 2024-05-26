@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,8 +8,9 @@ html {
   @apply font-body;
 }
 
-.link-hover a, button {
-  @apply hover:text-teal-600;
+.link-hover a,
+button {
+  @apply hover:text-purple-700;
 }
 
 .tag {
@@ -25,9 +26,10 @@ body .dark {
 }
 
 .stack {
-  @apply block max-w-xs p-6 darkcard mx-auto rounded overflow-hidden border relative shadow-md;
+  @apply block max-w-xs p-6 darkcard mx-auto rounded overflow-hidden border relative shadow-md cursor-pointer;
 }
 
-.stack, .icon {
-  @apply w-full hover:text-teal-600 hover:scale-105;
+.stack,
+.icon {
+  @apply w-full hover:text-purple-700 hover:scale-105;
 }

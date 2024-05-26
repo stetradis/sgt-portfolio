@@ -50,7 +50,7 @@ const PortfolioCard = () => {
               href="https://blockworks.co/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6"
+              className="bg-purple-600 text-white px-4 py-2 gap-2 hover:bg-purple-700 rounded absolute bottom-6"
             >
               Visit Website
             </a>
@@ -95,7 +95,7 @@ const PortfolioCard = () => {
               href="https://app.blockworksresearch.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6"
+              className="bg-purple-600 text-white px-4 py-2 gap-2 hover:bg-purple-700 rounded absolute bottom-6"
             >
               Visit Website
             </a>
@@ -138,7 +138,7 @@ const PortfolioCard = () => {
               href="https://www.saspeakup.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6"
+              className="bg-purple-600 text-white px-4 py-2 gap-2 hover:bg-purple-700 rounded absolute bottom-6"
             >
               Visit Website
             </a>
@@ -182,7 +182,7 @@ const PortfolioCard = () => {
               href="https://ninetyone.com/en/south-africa"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-500 text-white px-4 py-2 gap-2 hover:bg-teal-600 rounded absolute bottom-6"
+              className="bg-purple-600 text-white px-4 py-2 gap-2 hover:bg-purple-700 rounded absolute bottom-6"
             >
               Visit Website
             </a>
