@@ -22,7 +22,7 @@ const Navigation = (props: any) => {
   };
 
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav">
       {({ open }) => (
         <>
           <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ const Navigation = (props: any) => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="rounded-md px-3 py-2 text-xl font-semibold hover:text-purple-700"
+                        className="rounded-md px-3 py-2 text-xl font-semibold dark:text-white hover:text-purple-700"
                       >
                         {item.name}
                       </a>
@@ -92,7 +92,7 @@ const Navigation = (props: any) => {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple-700"
+                  className="block rounded-md px-3 py-2 text-base font-medium dark:text-white hover:text-purple-700"
                 >
                   {item.name}
                 </Disclosure.Button>
