@@ -11,8 +11,8 @@ const Tag = (props: CardTag) => {
       {tags.map((tag, index) => {
         return (
           <motion.span
-            key={`tag-${tag}`}
-            className="tag"
+            key={`tag-${tag}-${index}`}
+            className="custom-tag"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -23,9 +23,6 @@ const Tag = (props: CardTag) => {
             }}
             whileHover={{
               scale: 1.05,
-              backgroundColor: "var(--primary-light)",
-              color: "white",
-              borderColor: "var(--primary)",
             }}
           >
             {tag}

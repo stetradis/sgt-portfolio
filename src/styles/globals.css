@@ -63,3 +63,35 @@ button {
 .card-hover {
   @apply transform transition duration-300 hover:-translate-y-2 hover:shadow-xl;
 }
+
+.tech-item {
+  @apply border border-gray-200 transition-colors duration-300;
+}
+
+body.dark .tech-item {
+  border-color: var(--border-dark-border) !important;
+}
+
+.tech-item:hover {
+  border-color: var(--primary) !important;
+}
+
+body.dark .tech-item:hover {
+  border-color: var(--primary) !important;
+}
+
+.custom-tag {
+  @apply inline-block bg-gray-100 dark:bg-gray-800 rounded-full px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-300 mr-2 mb-2 border border-gray-200 dark:border-gray-700 transition-all duration-300;
+}
+
+.custom-tag:hover {
+  @apply border-primary;
+  background-color: var(--primary-light);
+  color: white;
+}
+
+body.dark .custom-tag:hover {
+  @apply border-primary;
+  background-color: var(--primary-light);
+  color: white;
+}

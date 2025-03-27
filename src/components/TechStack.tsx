@@ -84,13 +84,12 @@ const TechStack = () => {
         {techItems.map((tech, index) => (
           <motion.div
             key={tech.name}
-            className="flex flex-col items-center p-6 bg-white dark:bg-dark-card rounded-xl shadow-md border border-gray-200 dark:border-dark-border transition-all duration-300 hover:shadow-xl"
+            className="tech-item flex flex-col items-center p-6 bg-white dark:bg-dark-card rounded-xl shadow-md transition-all duration-300 hover:shadow-xl"
             variants={item}
             whileHover={{
               scale: 1.05,
               boxShadow:
                 "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-              borderColor: "var(--primary)",
             }}
           >
             <div className="mb-3 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-all duration-300">
