@@ -7,7 +7,7 @@ const PortfolioCard = () => {
     {
       title: "Blockworks",
       description:
-        "Designed and developed multiple features according to business requirements.",
+        "Developed and implemented Node.js backend with RESTful APIs running on cron jobs to serve key metrics and price data/charts to the frontend. Enhanced SEO performance, resulting in high visibility and ranking on Google platforms.",
       image: "/bweditorial.png",
       tags: [
         "javascript",
@@ -24,7 +24,7 @@ const PortfolioCard = () => {
     {
       title: "Blockworks Research",
       description:
-        "Full stack development on creating the research platform from a figma design.",
+        "Developed and launched the research platform from Figma designs, leading backend development including APIs, database management, and analytics integration. Used TypeScript and Node.js to build a comprehensive platform that serves institutional clients.",
       image: "/bwresearch.png",
       tags: [
         "javascript",
@@ -45,38 +45,40 @@ const PortfolioCard = () => {
     {
       title: "San Antonio Speak Up",
       description:
-        "Lead engineer on the city of San Antonio's engagement portal and representative backend system.",
+        "Tech lead for the city of San Antonio&apos;s engagement portal and representative backend system. Introduced methodologies and best practices that enhanced product definition and release processes, with a focus on WCAG compliance.",
       image: "/saspeakup.png",
       tags: [
-        "javascript",
-        "jquery",
-        "ajax",
         "c#",
         ".net",
         "mvc",
+        "javascript",
+        "jquery",
+        "ajax",
+        "t-sql",
         "azure",
-        "sqlserver",
         "css",
         "bootstrap",
+        "git",
       ],
       url: "https://www.saspeakup.com/",
     },
     {
       title: "Ninety One",
       description:
-        "Developed the end user website as well as rewriting the investment management backend system.",
+        "Full stack development of wealth and asset management solutions. Developed the investment management backend. Responsible for all production deployments and off-site Disaster Recovery procedures.",
       image: "/ninetyone.png",
       tags: [
-        "javascript",
-        "typescript",
-        "angular",
         "c#",
         ".net",
+        "angular",
+        "javascript",
+        "typescript",
         "azure",
-        "sqlserver",
-        "cosmosdb",
         "aws",
         "docker",
+        "t-sql",
+        "cosmosdb",
+        "jenkins",
       ],
       url: "https://ninetyone.com/en/south-africa",
     },
@@ -117,10 +119,11 @@ const PortfolioCard = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Being a software engineer in financial technology often means that the
-          projects I&apos;ve worked on cannot be shared publicly due to NDAs and
-          access requirements. Here you can find a handful of publicly available
-          projects that I have developed.
+          As a software engineer in the financial technology sector, many of my
+          enterprise projects are protected by confidentiality agreements. The
+          following showcase represents a selection of public-facing work that
+          demonstrates my technical capabilities and leadership in delivering
+          complex, user-centered solutions across diverse technology stacks.
         </motion.p>
       </div>
 

@@ -22,8 +22,8 @@ const CurrentProject = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          I am currently a Software Engineer at Legends, specializing in
-          creating confidence-building tools for children.
+          I am currently a Full Stack Engineer at Legends, where I architect and
+          develop solutions for a confidence coaching application.
         </motion.p>
       </div>
 
@@ -62,11 +62,12 @@ const CurrentProject = () => {
                     Legends
                   </h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
-                    Full Stack Software Engineer, working on implementing new
-                    features and significantly enhancing the product. Currently
-                    engaged in developing value-add features, defining product
-                    specifications, designating tickets, code review and
-                    implementing and maintaining best practices.
+                    Architected and developed robust full-stack solutions for a
+                    confidence coaching app, significantly improving application
+                    performance. I draft technical specifications, delegate
+                    tasks, implement coding standards, and conduct code reviews.
+                    I manage deployment processes while collaborating with
+                    cross-functional teams.
                   </p>
                   <div className="mb-6">
                     <Tag
@@ -76,10 +77,18 @@ const CurrentProject = () => {
                         "nextjs",
                         "nodejs",
                         "typescript",
+                        "nodejs",
                         "tailwind",
-                        "firebase",
-                        "figma",
+                        "gcp",
+                        "bigquery",
                         "vercel",
+                        "openai",
+                        "git",
+                        "github",
+                        "mixpanel",
+                        "sentry",
+                        "figma",
+                        "linear",
                       ]}
                     />
                   </div>

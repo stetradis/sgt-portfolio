@@ -100,12 +100,13 @@ export default function Home() {
                 className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl"
                 variants={item}
               >
-                As a Full Stack Software Engineer with 6+ years of experience, I
-                have a proven track record of developing innovative software
-                solutions in the financial technology and digital asset space.
-                My experience includes designing, developing, and maintaining
-                complex software applications that meet the needs of clients and
-                businesses.
+                As a Full Stack Engineer with 7+ years of experience, I
+                architect and develop robust software solutions with a focus on
+                performance optimization. My expertise spans front-end and
+                back-end technologies, including React, Next.js, TypeScript, and
+                Node.js. I excel at translating business requirements into
+                technical specifications, implementing best practices, and
+                mentoring team members to drive project success.
               </motion.p>
               <motion.div
                 variants={item}

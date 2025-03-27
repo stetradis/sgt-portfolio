@@ -65,10 +65,12 @@ const TechStack = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          The tech stack that I use consists of a combination of programming
-          languages, frameworks, libraries, and tools that enable me to build
-          robust and scalable applications. This is an overview of the various
-          technologies that I have used throughout my career.
+          My technical expertise spans multiple programming languages,
+          frameworks, and cloud platforms that I leverage to architect and
+          implement scalable, maintainable solutions. I specialize in full-stack
+          development with an emphasis on building secure, performant
+          applications for enterprise clients across financial technology and
+          digital assets sectors.
         </motion.p>
       </div>
 
