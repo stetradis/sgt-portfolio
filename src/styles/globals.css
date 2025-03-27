@@ -1,35 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #8b5cf6;
+  --primary-dark: #7c3aed;
+  --primary-light: #a78bfa;
+  --dark-bg: #171717;
+  --dark-card: #262626;
+  --dark-border: #404040;
+}
+
 html {
-  @apply font-body;
+  @apply font-body scroll-smooth;
+}
+
+body {
+  @apply bg-white transition-colors duration-300;
+}
+
+body.dark {
+  @apply bg-dark;
 }
 
 .link-hover a,
 button {
-  @apply hover:text-purple-700;
+  @apply hover:text-primary transition-all duration-300;
 }
 
 .tag {
-  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
-}
-
-body .dark {
-  @apply bg-zinc-900;
+  @apply inline-block bg-gray-100 dark:bg-gray-800 rounded-full px-3 py-1 text-sm font-medium text-gray-700 dark:text-gray-300 mr-2 mb-2 border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-primary dark:hover:border-primary;
 }
 
 .dark .darkcard {
-  @apply bg-zinc-800/30 shadow-none border border-zinc-700;
+  @apply bg-dark-card border-dark-border shadow-lg;
 }
 
 .stack {
-  @apply block max-w-xs p-6 darkcard mx-auto rounded overflow-hidden border relative shadow-md cursor-pointer;
+  @apply block max-w-xs p-6 bg-white dark:bg-dark-card mx-auto rounded-xl overflow-hidden border border-gray-200 dark:border-dark-border relative shadow-md cursor-pointer transition-all duration-300 hover:shadow-xl;
 }
 
 .stack,
 .icon {
-  @apply w-full hover:text-purple-700 hover:scale-105;
+  @apply w-full text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-all duration-300;
+}
+
+.btn {
+  @apply bg-primary text-white px-5 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-3 text-gray-800 dark:text-white;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10;
+}
+
+.card-hover {
+  @apply transform transition duration-300 hover:-translate-y-2 hover:shadow-xl;
 }

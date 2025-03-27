@@ -1,66 +1,105 @@
 import Image from "next/image";
 import Tag from "./Tag";
+import { motion } from "framer-motion";
 
 const CurrentProject = () => {
   return (
-    <section id="portfolio" className="mt-10">
-      <div className="p-10 text-center">
-        <h3 className="text-2xl py-2 font-semibold">
+    <section id="portfolio" className="mt-24">
+      <div className="text-center mb-12">
+        <motion.h3
+          className="section-title"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           Current Project and Work
-        </h3>
-        <p className="text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+        </motion.h3>
+        <motion.p
+          className="section-subtitle"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           I am currently a Software Engineer at Legends, specializing in
           creating confidence-building tools for children.
-        </p>
+        </motion.p>
       </div>
 
-      <div className="flex flex-wrap gap-4 pb-6">
-        <div className="darkcard max-w-xs mx-auto rounded overflow-hidden shadow-lg relative">
-          <Image
-            className="w-full"
-            src="/legends.png"
-            alt="Legends"
-            width={300}
-            height={0}
-            priority
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Legends</div>
-            <p className="text-gray-700 dark:text-gray-300 text-base">
-              Full Stack Software Engineer, working on implementing new features
-              and significantly enhancing the product. Currently engaged in
-              developing value-add features, defining product specifications,
-              designating tickets, code review and implementing and maintaining
-              best practices.
-            </p>
+      <motion.div
+        className="max-w-4xl mx-auto"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.div
+          className="bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-dark-border transition-all duration-300 card-hover"
+          whileHover={{ scale: 1.02 }}
+        >
+          <div className="md:flex">
+            <div className="md:w-2/5 relative h-64 md:h-auto">
+              <Image
+                className="w-full h-full object-cover"
+                src="/legends.png"
+                alt="Legends"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+            <div className="p-8 md:w-3/5">
+              <motion.div
+                className="flex flex-col h-full justify-between"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+              >
+                <div>
+                  <h4 className="font-bold text-2xl mb-4 text-gray-800 dark:text-white">
+                    Legends
+                  </h4>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6">
+                    Full Stack Software Engineer, working on implementing new
+                    features and significantly enhancing the product. Currently
+                    engaged in developing value-add features, defining product
+                    specifications, designating tickets, code review and
+                    implementing and maintaining best practices.
+                  </p>
+                  <div className="mb-6">
+                    <Tag
+                      tagNames={[
+                        "react",
+                        "javascript",
+                        "nextjs",
+                        "nodejs",
+                        "typescript",
+                        "tailwind",
+                        "firebase",
+                        "figma",
+                        "vercel",
+                      ]}
+                    />
+                  </div>
+                </div>
+
+                <motion.a
+                  href="https://confidence.buildlegends.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn inline-block w-auto text-center"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Visit Website
+                </motion.a>
+              </motion.div>
+            </div>
           </div>
-          <div className="px-6 pt-4 pb-2">
-            <Tag
-              tagNames={[
-                "react",
-                "javascript",
-                "nextjs",
-                "nodejs",
-                "typescript",
-                "tailwind",
-                "firebase",
-                "figma",
-                "vercel",
-              ]}
-            ></Tag>
-          </div>
-          <div className="px-6 pb-2 mt-20">
-            <a
-              href="https://confidence.buildlegends.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-600 text-white px-4 py-2 gap-2 hover:bg-purple-700 rounded absolute bottom-6"
-            >
-              Visit Website
-            </a>
-          </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

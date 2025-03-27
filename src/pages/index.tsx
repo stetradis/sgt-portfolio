@@ -1,59 +1,151 @@
 import Image from "next/image";
 import Head from "next/head";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { BsDownload } from "react-icons/bs";
 
 import SocialLink from "@/components/SocialLink";
 import PortfolioCard from "@/components/PortfolioCard";
-import { useState, useEffect } from "react";
 import { classNames } from "@/utils/classNames";
 import Navigation from "@/components/Navigation";
 import TechStack from "@/components/TechStack";
 import CurrentProject from "@/components/CurrentProject";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const storedDarkMode = JSON.parse(localStorage.getItem("dark") || "true");
+    // Get from localStorage or use false (light mode) as default
+    const storedDarkMode = localStorage.getItem("dark")
+      ? JSON.parse(localStorage.getItem("dark") || "false")
+      : false;
+
     setDarkMode(storedDarkMode);
+
+    // Apply dark mode class to html and body elements
+    if (storedDarkMode) {
+      document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
+    }
   }, []);
 
+  // Update document and body classes when dark mode changes
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+  // Animation variants
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <div
-      className={classNames(
-        darkMode ? "dark" : "",
-        "bg-zinc-100 px-10 pb-10 md:px-20 lg:px-40"
-      )}
-    >
+    <div className="min-h-screen">
       <Head>
-        <title>Stella Tetradis</title>
+        <title>Stella Tetradis | Software Engineer</title>
+        <meta
+          name="description"
+          content="Stella Tetradis - Software Engineer with expertise in full-stack development"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/st-logo.png" />
       </Head>
       <Navigation mode={darkMode} setMode={setDarkMode} />
-      <main className="dark:text-white dark:bg-zinc-900">
-        <section id="about">
-          <div className="p-8 text-center">
-            <h2 className="text-4xl font-semibold py-4 text-purple-700 font-md">
-              Stella Tetradis
-            </h2>
-            <h3 className="text-2xl py-2">Software Engineer</h3>
-            <p className="text-md py-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
-              As a Full Stack Software Engineer with 6+ years of experience, I
-              have a proven track record of developing innovative software
-              solutions in the financial technology and digital asset space. My
-              experience includes designing, developing, and maintaining complex
-              software applications that meet the needs of clients and
-              businesses.
-            </p>
-            <Image
-              src="/aistella.jpg"
-              alt="Stella"
-              width={210}
-              height={0}
-              className="my-4 mx-auto rounded-full overflow-hidden"
-              priority
-            />
-          </div>
+      <main className="dark:text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <section id="about" className="pt-16 md:pt-24">
+          <motion.div
+            className="flex flex-col md:flex-row items-center justify-between gap-10"
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.div
+              className="text-center md:text-left md:w-1/2"
+              variants={item}
+            >
+              <motion.h1
+                className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-light via-primary to-primary-dark pb-3"
+                variants={item}
+              >
+                Stella Tetradis
+              </motion.h1>
+              <motion.h2
+                className="text-2xl md:text-3xl font-semibold mb-6 text-gray-800 dark:text-gray-100"
+                variants={item}
+              >
+                Software Engineer
+              </motion.h2>
+              <motion.p
+                className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl"
+                variants={item}
+              >
+                As a Full Stack Software Engineer with 6+ years of experience, I
+                have a proven track record of developing innovative software
+                solutions in the financial technology and digital asset space.
+                My experience includes designing, developing, and maintaining
+                complex software applications that meet the needs of clients and
+                businesses.
+              </motion.p>
+              <motion.div
+                variants={item}
+                className="flex justify-center md:justify-start gap-4"
+              >
+                <a href="#portfolio" className="btn">
+                  View My Work
+                </a>
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="flex items-center gap-2 border border-gray-300 dark:border-dark-border px-5 py-2.5 rounded-lg font-medium text-gray-700 dark:text-gray-200 hover:border-primary dark:hover:border-primary transition-all duration-300"
+                >
+                  <BsDownload /> Resume
+                </a>
+              </motion.div>
+            </motion.div>
+
+            <motion.div
+              className="md:w-1/2 flex justify-center"
+              variants={item}
+            >
+              <motion.div
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-dark-card shadow-xl animate-float"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              >
+                <Image
+                  src="/aistella.jpg"
+                  alt="Stella"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+              </motion.div>
+            </motion.div>
+          </motion.div>
+
           <SocialLink />
           <TechStack />
         </section>
