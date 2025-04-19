@@ -45,7 +45,7 @@ const PortfolioCard = () => {
     {
       title: "San Antonio Speak Up",
       description:
-        "Tech lead for the city of San Antonio&apos;s engagement portal and representative backend system. Introduced methodologies and best practices that enhanced product definition and release processes, with a focus on WCAG compliance.",
+        "Tech lead for the city of San Antonio's engagement portal and representative backend system. Introduced methodologies and best practices that enhanced product definition and release processes, with a focus on WCAG compliance.",
       image: "/saspeakup.png",
       tags: [
         "c#",
