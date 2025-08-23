@@ -1,17 +1,47 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Tag from "./Tag";
-import { motion } from "framer-motion";
 
 const PortfolioCard = () => {
   const projects = [
+    {
+      title: "Legends",
+      description:
+        "I architected and developed robust full-stack solutions for a confidence coaching application, significantly improving application performance. I drafted technical specifications, delegated tasks, implemented coding standards, and conducted code reviews. I also managed deployment processes while collaborating with cross-functional teams.",
+      image: "/legends.png",
+      tags: [
+        "react",
+        "javascript",
+        "nextjs",
+        "nodejs",
+        "typescript",
+        "tailwind",
+        "gcp",
+        "bigquery",
+        "vercel",
+        "openai",
+        "git",
+        "github",
+        "mixpanel",
+        "sentry",
+        "figma",
+        "linear",
+      ],
+      url: "https://confidence.buildlegends.com/",
+    },
     {
       title: "Blockworks",
       description:
         "Developed and implemented Node.js backend with RESTful APIs running on cron jobs to serve key metrics and price data/charts to the frontend. Enhanced SEO performance, resulting in high visibility and ranking on Google platforms.",
       image: "/bweditorial.png",
       tags: [
+        "react",
         "javascript",
+        "typescript",
+        "nextjs",
         "nodejs",
+        "express",
+        "tailwind",
         "php",
         "heroku",
         "wordpress",
@@ -32,6 +62,7 @@ const PortfolioCard = () => {
         "php",
         "mysql",
         "nextjs",
+        "nodejs",
         "react",
         "tailwind",
         "aws",
@@ -110,7 +141,7 @@ const PortfolioCard = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Past Projects
+          Current & Past Projects
         </motion.h3>
         <motion.p
           className="section-subtitle"

@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Tag from "./Tag";
-import { motion } from "framer-motion";
 
+// Highlight a new project here and include it in the home page
 const CurrentProject = () => {
   return (
     <section id="portfolio" className="mt-24">
@@ -62,12 +63,12 @@ const CurrentProject = () => {
                     Legends
                   </h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
-                    Architected and developed robust full-stack solutions for a
-                    confidence coaching app, significantly improving application
-                    performance. I draft technical specifications, delegate
-                    tasks, implement coding standards, and conduct code reviews.
-                    I manage deployment processes while collaborating with
-                    cross-functional teams.
+                    I architect and develop robust full-stack solutions for a
+                    confidence coaching application, significantly improving
+                    application performance. I draft technical specifications,
+                    delegate tasks, implement coding standards, and conduct code
+                    reviews. I also manage deployment processes while
+                    collaborating with cross-functional teams.
                   </p>
                   <div className="mb-6">
                     <Tag

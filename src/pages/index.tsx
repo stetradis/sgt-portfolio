@@ -1,15 +1,13 @@
-import Image from "next/image";
-import Head from "next/head";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import { BsDownload } from "react-icons/bs";
 
-import SocialLink from "@/components/SocialLink";
-import PortfolioCard from "@/components/PortfolioCard";
-import { classNames } from "@/utils/classNames";
 import Navigation from "@/components/Navigation";
+import PortfolioCard from "@/components/PortfolioCard";
+import SocialLink from "@/components/SocialLink";
 import TechStack from "@/components/TechStack";
-import CurrentProject from "@/components/CurrentProject";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -151,7 +149,6 @@ export default function Home() {
           <TechStack />
         </section>
 
-        <CurrentProject />
         <PortfolioCard />
       </main>
     </div>
