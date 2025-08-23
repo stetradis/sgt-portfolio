@@ -110,7 +110,7 @@ export default function Home() {
                 variants={item}
                 className="flex justify-center md:justify-start gap-4"
               >
-                <a href="#portfolio" className="btn">
+                <a href="#projects" className="btn">
                   View My Work
                 </a>
                 <a

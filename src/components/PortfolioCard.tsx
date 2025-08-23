@@ -5,6 +5,30 @@ import Tag from "./Tag";
 const PortfolioCard = () => {
   const projects = [
     {
+      title: "SafeInsights",
+      description:
+        "As a senior software engineer, I led full-stack development of a comprehensive research management platform. I implemented MFA authentication systems, enhanced user invitation flows, developed status tracking features, and improved UI/UX across researcher and reviewer dashboards. I also contributed to Sentry logging integration and mobile-responsive design improvements.",
+      image: "/safeinsights.png",
+      tags: [
+        "typescript",
+        "nextjs",
+        "react",
+        "nodejs",
+        "postgresql",
+        "docker",
+        "playwright",
+        "kysely",
+        "clerk",
+        "mantine",
+        "sentry",
+        "jenkins",
+        "aws",
+        "git",
+        "github",
+      ],
+      url: "https://github.com/safeinsights/management-app",
+    },
+    {
       title: "Legends",
       description:
         "I architected and developed robust full-stack solutions for a confidence coaching application, significantly improving application performance. I drafted technical specifications, delegated tasks, implemented coding standards, and conducted code reviews. I also managed deployment processes while collaborating with cross-functional teams.",
@@ -94,7 +118,7 @@ const PortfolioCard = () => {
       url: "https://www.saspeakup.com/",
     },
     {
-      title: "Ninety One",
+      title: "Investec / Ninety One",
       description:
         "Full stack development of wealth and asset management solutions. Developed the investment management backend. Responsible for all production deployments and off-site Disaster Recovery procedures.",
       image: "/ninetyone.png",
@@ -132,7 +156,7 @@ const PortfolioCard = () => {
   };
 
   return (
-    <section className="mt-24 mb-20">
+    <section id="projects" className="mt-24 mb-20">
       <div className="text-center mb-12">
         <motion.h3
           className="section-title"
