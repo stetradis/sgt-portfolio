@@ -26,7 +26,7 @@ const PortfolioCard = () => {
         "git",
         "github",
       ],
-      url: "https://github.com/safeinsights/management-app",
+      url: "https://www.safeinsights.org/",
     },
     {
       title: "Legends",
